@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --foreground: #171717;
+  --background: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: #f5f5f5;
+  color: #171717;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+
+/* Tailwind Custom Colors */
+.bg-light-50 {
+  background-color: #ffffff;
+}
+
+.bg-light-100 {
+  background-color: #fafafa;
+}
+
+.bg-light-200 {
+  background-color: #f5f5f5;
+}
+
+.bg-light-300 {
+  background-color: #e5e5e5;
+}
+
+.text-light-500 {
+  color: #a3a3a3;
+}
+
+.text-light-600 {
+  color: #737373;
+}
+
+.text-light-700 {
+  color: #525252;
+}
+
+.text-light-900 {
+  color: #171717;
+}
+
+.bg-primary-50 {
+  background-color: #f0fdf4;
+}
+
+.bg-primary-100 {
+  background-color: #dcfce7;
+}
+
+.bg-primary-200 {
+  background-color: #bbf7d0;
+}
+
+.bg-primary-500 {
+  background-color: #22c55e;
+}
+
+.text-primary-500 {
+  color: #22c55e;
+}
+
+.text-primary-600 {
+  color: #16a34a;
+}
+
+.text-primary-700 {
+  color: #15803d;
+}
+
+.border-light-200 {
+  border-color: #f5f5f5;
+}
+
+.border-light-300 {
+  border-color: #e5e5e5;
+}
+
+.border-primary-100 {
+  border-color: #dcfce7;
+}
+
+.border-primary-200 {
+  border-color: #bbf7d0;
+}
+
+.border-primary-500 {
+  border-color: #22c55e;
+}
+
+.hover\:bg-light-100:hover {
+  background-color: #fafafa;
+}
+
+.hover\:bg-light-200:hover {
+  background-color: #f5f5f5;
+}
+
+.hover\:text-light-900:hover {
+  color: #171717;
+}
+
+.group:hover .group-hover\:bg-light-200 {
+  background-color: #f5f5f5;
+}
+
+.group:hover .group-hover\:bg-primary-200 {
+  background-color: #bbf7d0;
+}
+
+/* Secondary Colors */
+.bg-secondary-50 {
+  background-color: #eff6ff;
+}
+
+.bg-secondary-100 {
+  background-color: #dbeafe;
+}
+
+.bg-secondary-500 {
+  background-color: #3b82f6;
+}
+
+.text-secondary-500 {
+  color: #3b82f6;
+}
+
+/* Accent Colors */
+.bg-accent-purple\/5 {
+  background-color: rgba(168, 85, 247, 0.05);
+}
+
+.bg-accent-purple\/10 {
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.bg-accent-purple\/20 {
+  background-color: rgba(168, 85, 247, 0.2);
+}
+
+.border-accent-purple\/20 {
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+.text-accent-purple {
+  color: #a855f7;
+}
+
+.bg-accent-pink\/5 {
+  background-color: rgba(236, 72, 153, 0.05);
+}
+
+.bg-accent-pink\/10 {
+  background-color: rgba(236, 72, 153, 0.1);
+}
+
+.bg-accent-pink\/20 {
+  background-color: rgba(236, 72, 153, 0.2);
+}
+
+.border-accent-pink\/20 {
+  border-color: rgba(236, 72, 153, 0.2);
+}
+
+.text-accent-pink {
+  color: #ec4899;
+}
+
+.bg-accent-teal\/5 {
+  background-color: rgba(20, 184, 166, 0.05);
+}
+
+.bg-accent-teal\/10 {
+  background-color: rgba(20, 184, 166, 0.1);
+}
+
+.bg-accent-teal\/20 {
+  background-color: rgba(20, 184, 166, 0.2);
+}
+
+.border-accent-teal\/20 {
+  border-color: rgba(20, 184, 166, 0.2);
+}
+
+.text-accent-teal {
+  color: #14b8a6;
+}
+
+.bg-accent-orange\/5 {
+  background-color: rgba(249, 115, 22, 0.05);
+}
+
+.bg-accent-orange\/10 {
+  background-color: rgba(249, 115, 22, 0.1);
+}
+
+.bg-accent-orange\/20 {
+  background-color: rgba(249, 115, 22, 0.2);
+}
+
+.border-accent-orange\/20 {
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+.text-accent-orange {
+  color: #f97316;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* Button Styles */
+.btn-ghost {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: #737373;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.btn-ghost:hover {
+  background-color: #fafafa;
+  color: #171717;
+}
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: #16a34a;
+  background-color: white;
+  border: 1px solid #dcfce7;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #f0fdf4;
+  border-color: #16a34a;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: #22c55e;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #16a34a;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+/* Table Styles */
+.table-row {
+  border-bottom: 1px solid #f5f5f5;
+  transition: background-color 0.2s;
+}
+
+.table-row:hover {
+  background-color: #fafafa;
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude-code plugins install:*)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(dir:*)",
+      "Bash(python:*)",
+      "Bash(findstr:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(if exist nul del /F nul)"
+    ]
+  }
+}
